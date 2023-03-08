@@ -6,19 +6,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body,html{
-    background-color:rgba(0, 0, 0, 0.541) ;
-    width: 100vw;
-    height: 100vh;
-}
-
 main {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(109, 109, 109);
+    background-color: rgba(2, 13, 58, 0.808);
 
 }
 
@@ -101,6 +95,11 @@ label {
 }
 
 @media screen and (min-width:768px) and (max-width: 992px){
+    
+    main {
+        background-image: linear-gradient(to top, rgba(1, 41, 51, 0.703), rgba(178, 8, 127, 0.347));
+    }
+    
     section {
       width: 80vw;
       height: 330px;
@@ -134,7 +133,7 @@ label {
     
 
     #res {
-        width: 400px;
+        width: 500px;
         height: 70px;
         font-size: 1.em;
         background-color: rgba(0, 0, 0, 0.676);
@@ -143,6 +142,11 @@ label {
 }
 
 @media screen and (min-width:992px){
+    
+    main {
+        background-image: linear-gradient(to left, rgb(2, 48, 60), rgba(178, 8, 127, 0.637));
+    }
+
     section {
         width: 900px;
         height: 350px;
