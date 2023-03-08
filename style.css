@@ -1,0 +1,198 @@
+@charset " UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(109, 109, 109);
+
+}
+
+section {
+    background-image: linear-gradient(to top, rgba(255, 0, 106, 0.795), rgba(5, 212, 248, 0.984));
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.461);
+}
+
+h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+hr {
+    border: 2px solid black;
+    width: 350px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    height: 40px;
+    width: 300px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+input{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+label { 
+    width: 80px;
+}
+
+
+
+#btn {
+    width: 70%;
+    font-size: 1.3em;
+    box-shadow: 2px 5px 8px 3px rgba(0, 0, 0, 0.368);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.701);
+    color: white;
+    border-radius: 20px;
+}
+
+#btn:hover {
+    transition: 1s;
+    color: white;
+    background-color: rgba(0, 221, 255, 0.468);
+}
+
+#res {
+    width: 70%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.434);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.461);
+    font-weight: bold;text-align: center;
+    border-radius: 20px;
+}
+
+@media screen and (min-width:600px) and (max-width: 762px){
+    section {
+      width: 700px;
+      background-image: linear-gradient(to bottom, rgba(255, 0, 106, 0.795), rgba(5, 212, 248, 0.984));
+      margin: 10px;
+      
+      
+     
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    hr{
+       
+    }
+
+    .input {
+        justify-content: space-between;
+        font-size: 1.8em;
+        width: 350px;
+        
+    
+        
+    }
+
+    input {
+        width: 200px ;
+    }
+
+    #btn {
+        width: 350px;
+        height: 50px;
+        font-size: 1.7em;
+        
+    }
+
+    #btn:hover{
+        background-color: rgba(242, 10, 130, 0.751);
+    }
+    
+
+    #res {
+        width: 550px;
+        font-size: 1.8em;
+        background-color: rgba(0, 0, 0, 0.676);
+        
+    }
+}
+
+@media screen and (min-width:762px){
+    section {
+        width: 900px;
+        margin: 10px;
+        background-image: linear-gradient(to right, rgba(255, 0, 106, 0.795), rgba(5, 212, 248, 0.984));
+        margin: 10px;
+        
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .input {
+        width: 500px;
+        font-size: 1.8em;
+    }
+
+    input {
+       width: 300px; 
+       height: 50px;
+    }
+
+    #btn {
+        font-size: 1.6em;
+        width: 500px;
+        
+    }
+
+    
+
+    #res {
+        font-size: 1.6em;
+        width: 600px;
+    }
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
