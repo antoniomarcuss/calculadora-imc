@@ -100,7 +100,7 @@ label {
     border-radius: 20px;
 }
 
-@media screen and (min-width:600px) and (max-width: 768px){
+@media screen and (min-width:768px) and (max-width: 992px){
     section {
       width: 80vw;
       height: 330px;
@@ -142,7 +142,7 @@ label {
     }
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:992px){
     section {
         width: 750px;
         height: 400px;
