@@ -10,7 +10,7 @@ let btn = document.getElementById('btn')
                 if(imc < 18.5){
                     classificacao = 'ABAIXO DO PESO!'
                 }else if(imc >= 18.5 && imc <= 24.9){
-                    classificacao = 'Com o peso o NORMAL!'
+                    classificacao = 'com o peso o NORMAL!'
                 }else if(imc >= 25 && imc <= 29.9){
                     classificacao = 'com SOBREPESO!'
                 }else if(imc >= 30 && imc <= 39.9){
