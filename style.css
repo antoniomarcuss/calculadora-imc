@@ -15,7 +15,7 @@ main {
 
 }
 
-form {
+#calculadora {
     background-image: linear-gradient(to top, rgba(255, 0, 106, 0.795), rgba(5, 212, 248, 0.984));
     width: 280px;
     height: 500px;
@@ -107,7 +107,7 @@ label {
         background-image: linear-gradient(to top, rgba(1, 41, 51, 0.703), rgba(178, 8, 127, 0.347));
     }
     
-    form {
+    #calculadora {
       width: 80vw;
       height: 330px;
       background-image: linear-gradient(to bottom, rgba(255, 0, 106, 0.795), rgba(5, 212, 248, 0.984));
@@ -155,7 +155,7 @@ label {
         background-image: linear-gradient(to left, rgb(2, 48, 60), rgba(178, 8, 127, 0.637));
     }
 
-    form {
+    #calculadora {
         width: 900px;
         height: 350px;
         background-image: linear-gradient(to right, rgba(255, 0, 106, 0.795), rgba(5, 212, 248, 0.984));

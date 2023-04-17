@@ -9,26 +9,27 @@
 </head>
 <body>
     <main>
-        
-            <form action="" method="post">
-                <h1>Calculadora IMC</h1> <hr>
-                <div class="input">
-                        <label for="nome">Nome: </label><input type="text" name="nome" id="nome" autocomplete="name">
-                </div>
-                <div class="input">
-                    <label for="altura">Altura: </label><input type="number" name="nome" id="altura" step="0.01" autocomplete="off">
-                </div>
-                <div class="input">
-                    <label for="peso">Peso:</label><input type="number" name="peso" id="peso" autocomplete="off">
-                </div>
-                <input type="submit" value="Calcular" id="btn">
-            
-                <div id="res">Resultado...
-                </div>
-            </form>
-        
+        <div id="calculadora">
+            <h1>Calculadora IMC</h1> <hr>
+            <div class="input">
+                    <label for="nome">Nome: </label><input type="text" name="nome" id="nome" autocomplete="name">
+            </div>
+            <div class="input">
+                <label for="altura">Altura: </label><input type="number" name="nome" id="altura" step="0.01"  autocomplete="off" placeholder="ex 1,77">
+            </div>
+            <div class="input">
+                <label for="peso">Peso:</label><input type="number" name="peso" id="peso" autocomplete="off" placeholder="ex 70,5">
+            </div>
+            <input type="submit" value="Calcular" id="btn">
+            <div id="res">Resultado...
+            </div>
+        </div>
     </main>
 
         <script src="imc.js"></script>
 </body>
 </html>
+        
+            
+            
+        
