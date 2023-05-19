@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
+form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,7 @@ main {
 
 }
 
-#calculadora {
+#container {
     background-image: linear-gradient(to top, rgba(255, 0, 106, 0.795), rgba(5, 212, 248, 0.984));
     width: 280px;
     height: 500px;
@@ -64,22 +64,29 @@ label {
     width: 80px;
 }
 
+.btn{
+    display: flex;
+
+}
 
 
-#btn {
-    width: 70%;
+#btnCalcular,#btnLimpar {
+    width: 100px;
+    height: 40px;
+    margin: 5px;
     font-size: 1.3em;
+    border: none;
     box-shadow: 2px 5px 8px 3px rgba(0, 0, 0, 0.368);
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.701);
+    background-color: rgba(23, 9, 9, 0.562);
     color: white;
     border-radius: 20px;
 }
 
-#btn:hover {
+#btnCalcular:hover, #btnLimpar:hover {
     transition: 1s;
     color: white;
-    background-color: rgba(0, 221, 255, 0.468);
+    background-color: #00ddff77;
 }
 
 #res {
@@ -94,6 +101,7 @@ label {
     font-weight: bold;
     text-align: center;
     border-radius: 20px;
+    padding: 10px;
 }
 
 .baixo{
@@ -103,11 +111,11 @@ label {
 
 @media screen and (min-width:768px) and (max-width: 992px){
     
-    main {
+    form {
         background-image: linear-gradient(to top, rgba(1, 41, 51, 0.703), rgba(178, 8, 127, 0.347));
     }
     
-    #calculadora {
+    #container {
       width: 80vw;
       height: 330px;
       background-image: linear-gradient(to bottom, rgba(255, 0, 106, 0.795), rgba(5, 212, 248, 0.984));
@@ -121,41 +129,42 @@ label {
     .input {
         justify-content: space-between;
         width: 350px;
-        margin: 5px;
+       
     }
 
     input {
         width: 200px ;
     }
 
-    #btn {
+    #btnCalcular,#btnLimpar {
         width: 200px;
         height: 40px;
         font-size: 1.2em;
         
+    }    
+
+    #btnCalcular:hover, #btnLimpar:hover {
+        background-color: rgba(5, 212, 248, 0.984);
     }
 
-    #btn:hover{
-        background-color: rgba(242, 10, 130, 0.751);
-    }
     
-
     #res {
         width: 500px;
         height: 70px;
         font-size: 1.em;
         background-color: rgba(0, 0, 0, 0.676);
+        padding: 0;
         
     }
 }
 
 @media screen and (min-width:992px){
     
-    main {
+    form {
         background-image: linear-gradient(to left, rgb(2, 48, 60), rgba(178, 8, 127, 0.637));
     }
 
-    #calculadora {
+    #container {
         width: 900px;
         height: 350px;
         background-image: linear-gradient(to right, rgba(255, 0, 106, 0.795), rgba(5, 212, 248, 0.984));
@@ -178,13 +187,11 @@ label {
        
     }
 
-    #btn {
+    #btnCalcular,#btnLimpar {
         font-size: 1.2em;
         width: 200px;
         
     }
-
-    
 
     #res {
         font-size: 1em;

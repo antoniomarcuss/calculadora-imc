@@ -1,28 +1,46 @@
-let btn = document.getElementById('btn')
-        btn.addEventListener('click', function(e) {
-            let nome = document.getElementById('nome').value
-            let altura = document.getElementById('altura').value
-            let peso = document.getElementById('peso').value
-            let res = document.getElementById('res')
-            if(nome !== '' && altura !== '' && peso !== ""){
-                let imc = (peso / (altura * altura)).toFixed(1)
-                let classificacao = ''
-                if(imc < 18.5){
-                    classificacao = 'abaixo do peso!'
-                }else if(imc >= 18.5 && imc <= 24.9){
-                    classificacao = 'com o peso o normal!'
-                }else if(imc >= 25 && imc <= 29.9){
-                    classificacao = 'com sobrepeso!'
-                }else if(imc >= 30 && imc <= 39.9){
-                    classificacao = 'com obesidade grau II!'
-                }else if(imc > 40){
-                    classificacao = 'com obesidade grau III! <br> CUIDADO!'                 
-                }
-                res.innerHTML = `${nome} seu IMC é ${imc} e você está ${classificacao}`
+(function(){
+    const form = document.querySelector('form')
+    const nome = document.getElementById('nome')
+    const peso = document.getElementById('peso')
+    const altura = document.getElementById('altura')
+    let res = document.getElementById('res')
 
-            }else{
-                alert('Preencha todos os Campos!')}
-            e.preventDefault()
-        })
+    form.addEventListener('submit', validadarForm)
+    form.addEventListener('reset', limparForm)
 
-       
+    function validadarForm(e){
+        e.preventDefault()
+        if(!nome.value || !peso.value || !altura.value){
+           alert('Preencha todos os dados');
+        }else{
+            const imc = calcularImc(peso.value, altura.value)
+            res.innerHTML = `${nome.value} seu imc é ${imc} e ${classificaImc(imc)}`
+            res.style.color = '00ddff77'
+        }
+    }
+    
+    function calcularImc(peso, altura){
+        return (peso / (altura * altura)).toFixed(1)
+    }
+    
+    function classificaImc(imc){
+        if(imc < 18.5){
+           return 'você está muito magro'
+        }else if(imc <= 24.9){
+           return 'você está com o peso normal'
+        }else if(imc <= 29.9){
+           return 'você está com o sobrepeso'
+        }else if(imc <= 39.9){
+           return 'você está com o obesidade grau II'
+        }else{
+           return 'você está com o obesidade grau III'
+        }
+    }
+    
+    function limparForm(){
+       form.reset()
+       res.textContent = 'Resultado...'
+       nome.focus()
+    }
+})()
+
